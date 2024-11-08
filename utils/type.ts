@@ -1,7 +1,9 @@
-import { ReactNode } from "react";
 import { IconType } from "react-icons";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import TodosList from "../public/images/todos.jpg";
+import NaufalCommerce from "../public/images/naufal-commerce.png";
+import { StaticImageData } from "next/image";
 
 type NavLink = {
   id: number;
@@ -19,6 +21,14 @@ type SocialMedias = {
   name: string;
   icon: IconType;
   href: string;
+};
+
+type Projects = {
+  id: number;
+  image: string | StaticImageData;
+  href: string;
+  name: string;
+  description: string;
 };
 
 type WorkExperiences = {
@@ -86,5 +96,24 @@ export const socialmedias: SocialMedias[] = [
     name: "Github",
     href: "https://github.com/naufalaufa",
     icon: FaGithub,
+  },
+];
+
+export const projects: Projects[] = [
+  {
+    id: 1,
+    name: "Todo List React.js",
+    image: TodosList,
+    description:
+      "this is a simple project that uses react.js and pure CSS, todolist project, and also uses the propsdata type to define the data in the props",
+    href: "https://todo-naufal-proptypes-2024.vercel.app/",
+  },
+  {
+    id: 2,
+    name: "Naufal E commerce",
+    image: NaufalCommerce,
+    description:
+      "This project was created with the next.js tech stack for the front end, for authentication using the Clark library, for the backend using express.js and also node.js for creating the api (application programming interface)",
+    href: "/",
   },
 ];
