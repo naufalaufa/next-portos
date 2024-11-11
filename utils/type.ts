@@ -1,7 +1,7 @@
 import { IconType } from "react-icons";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import TodosList from "../public/images/todos.jpg";
+import TodosList from "../public/images/todolist.png";
 import NaufalCommerce from "../public/images/naufal-commerce.png";
 import { StaticImageData } from "next/image";
 
@@ -105,8 +105,8 @@ export const projects: Projects[] = [
     name: "Todo List React.js",
     image: TodosList,
     description:
-      "this is a simple project that uses react.js and pure CSS, todolist project, and also uses the propsdata type to define the data in the props",
-    href: "https://todo-naufal-proptypes-2024.vercel.app/",
+      "this is a simple project that uses react.js and typescript and tailwindCSS for styling and use react toastify",
+    href: "https://naufal-todo-ts.vercel.app/",
   },
   {
     id: 2,

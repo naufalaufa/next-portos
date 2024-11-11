@@ -6,7 +6,7 @@ const Description = () => {
     <div className="py-4 px-4 my-10">
       <div className="grid grid-cols-4 gap-8 place-content-center place-items-center">
         {descs.map((item) => (
-          <p className="text-sm " key={item.id}>
+          <p className="text-sm" key={item.id}>
             {item.name}
           </p>
         ))}

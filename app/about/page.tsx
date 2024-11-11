@@ -31,18 +31,11 @@ const Page = () => {
             <div className="flex gap-4 items-center my-3">
               {socialmedias.map((item) => {
                 return (
-                  <>
-                    <Link
-                      legacyBehavior
-                      key={item.id}
-                      href={item.href}
-                      passHref
-                    >
-                      <a target="_blank">
-                        {item.icon ? <item.icon size={30} /> : null}
-                      </a>
-                    </Link>
-                  </>
+                  <Link legacyBehavior key={item.id} href={item.href} passHref>
+                    <a target="_blank">
+                      {item.icon ? <item.icon size={30} /> : null}
+                    </a>
+                  </Link>
                 );
               })}
             </div>
