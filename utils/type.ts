@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import TodosList from "../public/images/todolist.png";
 import NaufalCommerce from "../public/images/naufal-commerce.png";
+import NaufalFurniture from "../public/images/furniture(8).png";
 import { StaticImageData } from "next/image";
 
 type NavLink = {
@@ -114,6 +115,14 @@ export const projects: Projects[] = [
     image: NaufalCommerce,
     description:
       "This project was created with the next.js tech stack for the front end, for authentication using the Clark library, for the backend using express.js and also node.js for creating the api (application programming interface)",
+    href: "/",
+  },
+  {
+    id: 3,
+    name: "Naufal Furniture Product",
+    image: NaufalFurniture,
+    description:
+      "This project client only using react.js and typescript for define the datas , using redux toolkit state management , using react toastify to pop up alert",
     href: "/",
   },
 ];
