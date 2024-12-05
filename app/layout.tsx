@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
+import Contact from "@/components/Contact";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <Header />
         <div className="w-full min-w-full  m-auto">{children}</div>
+        <Contact />
       </body>
     </html>
   );

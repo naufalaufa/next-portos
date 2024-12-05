@@ -5,6 +5,7 @@ import TodosList from "../public/images/todolist.png";
 import NaufalCommerce from "../public/images/naufal-commerce.png";
 import NaufalFurniture from "../public/images/furniture(8).png";
 import { StaticImageData } from "next/image";
+import DeviceLaptop from "../public/images/laptop-todolist.png";
 
 type NavLink = {
   id: number;
@@ -104,7 +105,7 @@ export const projects: Projects[] = [
   {
     id: 1,
     name: "Todo List React.js",
-    image: TodosList,
+    image: DeviceLaptop,
     description:
       "this is a simple project that uses react.js and typescript and tailwindCSS for styling and use react toastify",
     href: "https://naufal-todo-ts.vercel.app/",

@@ -25,8 +25,8 @@ const Page = () => {
             <p className="text-sm">
               Hi, halo, my name Mochamad Naufal Aufa Rifqi live in Jakarta -
               Indonesia as a Programmer expertise in website development as a
-              Front End Developer, give me a project, then I will take your
-              money.
+              Front End Developer expertise tech stack using react.js, give me a
+              project, then I will take your money.
             </p>
             <div className="flex gap-4 items-center my-3">
               {socialmedias.map((item) => {
