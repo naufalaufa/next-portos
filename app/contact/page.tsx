@@ -18,6 +18,7 @@ const Page = () => {
         <form className="grid p-4 rounded-lg gap-3">
           <label className="text-white">Name</label>
           <input
+            required
             placeholder="Name"
             className="rounded-lg p-2 text-xs w-44"
             type="text"
@@ -25,6 +26,7 @@ const Page = () => {
           />
           <label className="text-white">Email</label>
           <input
+            required
             placeholder="Email"
             className="text-xs p-2 rounded-lg"
             type="email"
@@ -32,12 +34,13 @@ const Page = () => {
           />
           <label className="text-white">Message</label>
           <textarea
+            required
             placeholder="Message"
             className="text-xs w-64 h-32 p-2 rounded-lg"
             name="message"
           />
           <input
-            className="text-blue-200 bg-blue-800 p-2 rounded-lg"
+            className="text-blue-200 bg-blue-800 p-2 rounded-lg cursor-pointer"
             type="submit"
             value="Send"
           />
