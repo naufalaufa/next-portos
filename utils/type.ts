@@ -124,6 +124,6 @@ export const projects: Projects[] = [
     image: NaufalFurniture,
     description:
       "This project client only using react.js and typescript for define the datas , using redux toolkit state management , using react toastify to pop up alert",
-    href: "/",
+    href: "https://naufal-furniture.vercel.app/",
   },
 ];
