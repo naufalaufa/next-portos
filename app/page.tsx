@@ -18,7 +18,6 @@ const Page = () => {
               <p className="text-xs 2xl:text-lg text-center">
                 Can you help me to solve this error ?
               </p>
-              <div className="flex items-center gap-3"></div>
             </div>
           </div>
           <Description />

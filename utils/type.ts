@@ -1,11 +1,11 @@
 import { IconType } from "react-icons";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import TodosList from "../public/images/todolist.png";
 import NaufalCommerce from "../public/images/naufal-commerce.png";
 import NaufalFurniture from "../public/images/furniture(8).png";
 import { StaticImageData } from "next/image";
 import DeviceLaptop from "../public/images/laptop-todolist.png";
+import { FaReact } from "react-icons/fa";
 
 type NavLink = {
   id: number;
@@ -46,6 +46,24 @@ export const workexperiences: WorkExperiences[] = [
     role: "Front End Developer Internship",
     company: "Cretivox Broadcasting Network",
     date: "23 Desember 2023 - 24 Mei 2024",
+  },
+];
+
+export const techStack = [
+  {
+    id: 1,
+    name: "React.js",
+    icon: FaReact,
+    description:
+      "React js is powerfull framework in javascript , before you start React you must learn basic javascript , react is beautiful framework , what i think with react? , react",
+  },
+  {
+    id: 2,
+    name: "Typescript",
+  },
+  {
+    id: 3,
+    name: "Next.js",
   },
 ];
 
@@ -124,6 +142,6 @@ export const projects: Projects[] = [
     image: NaufalFurniture,
     description:
       "This project client only using react.js and typescript for define the datas , using redux toolkit state management , using react toastify to pop up alert",
-    href: "https://naufal-furniture.vercel.app/",
+    href: "https://naufal-furniture.netlify.app/",
   },
 ];

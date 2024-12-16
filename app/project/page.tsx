@@ -4,7 +4,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="min-h-screen max-w-7xl px-8 py-8 w-full bg-slate-900 grid place-items-center py-10">
+    <div className="min-h-screen px-8 w-screen bg-slate-900 grid place-items-center py-10">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((item) => (
           <div

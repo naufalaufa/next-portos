@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import NaufalImage from "@/public/images/opal.png";
 import Experience from "@/components/Experience";
-import { socialmedias } from "@/utils/type";
+import { socialmedias, techStack } from "@/utils/type";
 import Link from "next/link";
 
 const Page = () => {
@@ -22,7 +22,7 @@ const Page = () => {
             />
           </div>
           <div>
-            <p className="text-sm">
+            <p className="text-sm my-4">
               Hi, halo, my name Mochamad Naufal Aufa Rifqi live in Jakarta -
               Indonesia as a Programmer expertise in website development as a
               Front End Developer expertise tech stack using react.js, give me a
@@ -38,6 +38,29 @@ const Page = () => {
                   </Link>
                 );
               })}
+            </div>
+            <div className="my-4 mt-9">
+              <p className="text-xs">
+                About we create code with tech stack , About we write code with
+                tech stack , my personal point of view about the tech stack that
+                I expertise
+              </p>
+              <div className=" grid grid-cols-2 place-content-center place-items-center  gap-8 my-4">
+                {techStack.map((item) => {
+                  return (
+                    <div className="bg-white  rounded-lg " key={item.id}>
+                      <Link
+                        href={`about/techstack/${item.name}`}
+                        className="text-sm text-black p-2 w-full text-center inline-block"
+                      >
+                        <p>{item.name}</p>
+                        <span>{item.icon && <item.icon />}</span>
+                      </Link>
+                    </div>
+                  );
+                })}
+                <p>And others</p>
+              </div>
             </div>
           </div>
         </div>
